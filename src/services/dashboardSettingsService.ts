@@ -6,11 +6,13 @@ const DEFAULT_WIDGETS = [
     'balance',
     'income',
     'expenses',
+    'smartAlerts',
     'cashflow',
     'recentTransactions',
     'topCategories',
     'healthScore',
     'quickActions',
+    'quickGoals',
     'tipOfTheDay',
     'accounts'
 ];
@@ -19,11 +21,13 @@ const DEFAULT_SIZES: Record<string, 'small' | 'medium' | 'large'> = {
     balance: 'small',
     income: 'small',
     expenses: 'small',
+    smartAlerts: 'medium',
     cashflow: 'large',
     recentTransactions: 'medium',
     topCategories: 'medium',
     healthScore: 'small',
     quickActions: 'small',
+    quickGoals: 'medium',
     tipOfTheDay: 'small',
     accounts: 'large'
 };

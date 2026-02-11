@@ -26,6 +26,8 @@ import HealthScoreWidget from '../components/dashboard/HealthScoreWidget';
 import QuickActionsWidget from '../components/dashboard/QuickActionsWidget';
 import AccountsWidget from '../components/dashboard/AccountsWidget';
 import TipOfTheDay from '../components/TipOfTheDay';
+import SmartAlertsWidget from '../components/dashboard/SmartAlertsWidget';
+import QuickGoalsWidget from '../components/dashboard/QuickGoalsWidget';
 
 // Modal Component
 const Modal = ({
@@ -298,6 +300,8 @@ export default function Dashboard() {
                         case 'healthScore': return <HealthScoreWidget t={t} healthScore={summary.healthScore} />;
                         case 'quickActions': return <QuickActionsWidget t={t} onQuickAction={handleQuickAction} />;
                         case 'tipOfTheDay': return <TipOfTheDay />;
+                        case 'smartAlerts': return <SmartAlertsWidget />;
+                        case 'quickGoals': return <QuickGoalsWidget />;
                         case 'accounts': return (
                             <AccountsWidget
                                 t={t}
